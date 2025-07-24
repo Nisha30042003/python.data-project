@@ -58,7 +58,7 @@ for i in range(5):
 
 ```
 
-![Trending top skills for Data Analysts in India](1_Python_Project.ipynb\images\output2.png)
+![Trending top skills for Data Analysts in India](1_Python_Project.ipynb/images/output2.png)
 
 ## Insights:
 - SQL remains the most consisstently demanded skill
@@ -67,3 +67,35 @@ throughout the year
 - Exceel experienced a significant increase in demand during May, surpassing both Python and Tableau.
 
 - Python, Tableau and Power BI dhows stable demand throughout the year with some fluctuations but remains essential skills for Data Analysts.
+
+# The Analysis
+
+## 3. How well do jobs and skills pay for Data Analysts?
+
+### Visualize Data
+
+```python
+sns.boxplot(data=df_IND_top6, x='salary_year_avg', y='job_title_short',order=job_order)
+sns.set_theme(style='ticks')
+
+plt.title('Salary Distribution by Job Title in India')
+plt.xlabel('Yearly Salary')
+plt.ylabel('')
+plt.xlim(0, 500000)
+ticks_x= plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+plt.show()
+
+```
+
+#### Results
+
+![Salary Distributions of Data Jobs in India](1_Python_Project.ipynb/images/output3.png)
+
+### Insights
+
+- There is a significance variation in salary ranges across the different jobs. Data Engineer position tends to have the highest salary.
+
+- The machine learning engineer and data scientist have a wide range of jobs position with consistenc salary, with few outliers.
+
+
