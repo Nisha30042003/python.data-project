@@ -70,7 +70,7 @@ throughout the year
 
 # The Analysis
 
-## 3. How well do jobs and skills pay for Data Analysts?
+## 3. How well do jobs and skills pay for Data Analysts and highest paid and most demanded skills for Data Analysts?
 
 ### Visualize Data
 
@@ -99,3 +99,39 @@ plt.show()
 - The machine learning engineer and data scientist have a wide range of jobs position with consistenc salary, with few outliers.
 
 
+### Visulize Data
+
+```python
+fig, ax = plt.subplots(2, 1)
+
+sns.set_theme(style='ticks')
+# top 10 highest paying skills for Data Analysts in India
+sns.barplot(data=df_DA_top_pay, x='median', y=df_DA_top_pay.index,hue='median', ax=ax[0], palette='dark:b_r')
+ax[0].set_title('Top Paying Skills for Data Analysts in India')
+ax[0].set_xlabel('')
+ax[0].set_ylabel('')
+ax[0].legend_.remove()
+
+
+# top 10 most in-demand skills for Data Analysts in India
+sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', ax=ax[1], palette='dark:b_r')
+ax[1].set_title('Most In-Demand Skills for Data Analysts in India')
+ax[1].set_ylabel('')
+ax[1].set_xlabel('Median Salary')
+ax[1].legend_.remove()
+ax[1].set_xlim(ax[0].get_xlim())
+
+plt.tight_layout()
+plt.show()
+
+```
+
+![Comparision Between Highest Paid and Most In-demand Skills](1_Python_Project.ipynb/images/output4.png)
+
+### Insights:
+
+- The top graph shows specialized technical skills like 'postgresql', 'pyspark',and 'gitlab' are associated with higher salarie.
+
+- The bottom graph highlights that foundational skills like 'poer bi', 'spark', and 'tableau' are most in-demand.
+
+- There is a clear distinction between the skills between the higheat paid jobs and those that are most in- demand. Data Analysts aiming to maximize their career potential should consider developing a diverse skill set that includes both high-paying specialized skills and widely demanded skills.
