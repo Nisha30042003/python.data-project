@@ -26,7 +26,7 @@ plt.show()
 
 ### Result
 
-![Visualization of top skills for data jobs](1_Python_Project.ipynb\images\output.png)
+![Visualization of top skills for data jobs](1_Python_Project.ipynb/images/output.png)
 
 ### Insights
 
