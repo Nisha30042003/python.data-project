@@ -31,7 +31,7 @@ For my deep dive into the data analyst job market, I harnessed the power of seve
 To find the most demanded skills for the top 3 most popular data roles. I filtered out thoes positions by which ones were the most popular, abd got the top 5 skills for these top 3 roles. Thid query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I'm targeting.
 
 View my notebook with detailed steps here:
-[2_Skill_Demand.ipynb](1_Python_Project.ipynb/2_Skill_Demand.ipynb)
+[2_Skill_Demand.ipynb](1_Python_Project/2_Skill_Demand.ipynb)
 
 ### Visualization of data
 
@@ -52,7 +52,7 @@ plt.show()
 
 ### Result
 
-![Visualization of top skills for data jobs](1_Python_Project.ipynb/images/output.png)
+![Visualization of top skills for data jobs](1_Python_Project/images/output.png)
 
 ### Insights
 
@@ -84,7 +84,7 @@ for i in range(5):
 
 ```
 
-![Trending top skills for Data Analysts in India](1_Python_Project.ipynb/images/output2.png)
+![Trending top skills for Data Analysts in India](1_Python_Project/images/output2.png)
 
 ## Insights:
 - SQL remains the most consisstently demanded skill
@@ -116,7 +116,7 @@ plt.show()
 
 #### Results
 
-![Salary Distributions of Data Jobs in India](1_Python_Project.ipynb/images/output3.png)
+![Salary Distributions of Data Jobs in India](1_Python_Project/images/output3.png)
 
 ### Insights
 
@@ -152,7 +152,7 @@ plt.show()
 
 ```
 
-![Comparision Between Highest Paid and Most In-demand Skills](1_Python_Project.ipynb/images/output4.png)
+![Comparision Between Highest Paid and Most In-demand Skills](1_Python_Project/images/output4.png)
 
 ### Insights:
 
